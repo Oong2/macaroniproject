@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.only(top: 300),
+                padding: const EdgeInsets.only(top: 200),
                 child: Container(
                   width: 180,
                   height: 150,
@@ -35,26 +35,23 @@ class HomePage extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Image.network(
-                          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/150px-Instagram_logo_2022.svg.png",
-                          width: 50,
-                          height: 50),
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 20.0),
+                        child: Image.asset(
+                          "assets/images/rogo.png", //MACARONI 로고
+                          fit: BoxFit.fill,
+                        ),
+                      ),
                       SingleChildScrollView(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            Image.network(
-                                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/150px-Instagram_logo_2022.svg.png",
-                                width: 50,
-                                height: 50),
-                            Image.network(
-                                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/150px-Instagram_logo_2022.svg.png",
-                                width: 50,
-                                height: 50),
-                            Image.network(
-                                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/150px-Instagram_logo_2022.svg.png",
-                                width: 50,
-                                height: 50),
+                            Image.asset("assets/images/rogo1.png",
+                                width: 50, height: 50),
+                            Image.asset("assets/images/rogo2.png",
+                                width: 50, height: 50),
+                            Image.asset("assets/images/rogo3.png",
+                                width: 50, height: 50),
                           ],
                         ),
                       ),
@@ -72,7 +69,7 @@ class HomePage extends StatelessWidget {
                   child: TextField(
                     decoration: InputDecoration(
                         enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(15.0),
+                          borderRadius: BorderRadius.circular(10.0),
                           borderSide:
                               BorderSide(color: Colors.grey, width: 1.0),
                         ),
@@ -87,7 +84,7 @@ class HomePage extends StatelessWidget {
                   obscureText: true,
                   decoration: InputDecoration(
                     enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(15.0),
+                      borderRadius: BorderRadius.circular(10.0),
                       borderSide: BorderSide(color: Colors.grey, width: 1.0),
                     ),
                     labelText: ("비밀번호"),
@@ -108,10 +105,10 @@ class HomePage extends StatelessWidget {
                     children: [
                       SingleChildScrollView(
                         child: Padding(
-                          padding: const EdgeInsets.all(10),
+                          padding: const EdgeInsets.all(2),
                           child: Container(
                             child: Text("로그인"),
-                            margin: EdgeInsets.all(2),
+                            margin: EdgeInsets.all(0),
                           ),
                         ),
                       ),

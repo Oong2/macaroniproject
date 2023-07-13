@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'story2.dart';
 
 // import 'package:flutter_application_1/main.dart';
 void main() {
-  runApp(story1());
+  runApp(story3());
 }
 
-class story1 extends StatelessWidget {
-  const story1({Key? key}) : super(key: key);
+class story3 extends StatelessWidget {
+  const story3({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -25,7 +24,7 @@ class story1 extends StatelessWidget {
                     margin: const EdgeInsets.only(left: 0.0),
                     width: 60,
                     child: Text(
-                      "김기호",
+                      "채진우",
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
@@ -44,7 +43,7 @@ class story1 extends StatelessWidget {
                     width: 300,
                     height: 600,
                     child: Text(
-                      "26세  \nENTJ  \n\n다들 힘내세요!",
+                      "23세  \nINTP  \n\n화이팅~!",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 20,
@@ -52,14 +51,7 @@ class story1 extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Image.asset("name"),
-                  ElevatedButton(
-                    child: Text("Go to Screen B Page"),
-                    onPressed: () {
-                      Navigator.push(
-                          context, MaterialPageRoute(builder: (_) => story2()));
-                    },
-                  ),
+                  Image.asset("name")
                 ],
               ),
             )
